@@ -1,0 +1,44 @@
+<%- include('./partials/header.ejs') %>
+
+<div class="box-nav-d-flex justify-between mt-3 ">
+  <a href="/">
+      <i class="fas fa-angle-double-left"></i>
+      All Courses
+  </a>
+</div>
+
+<div class="container mt-3">
+    <h2 class="alert alert-success text-center">Add New Course</h2>
+
+      
+
+        <form action="/create" method="post"  class="mt-5">
+            <div class="mb-3">
+                <label for="code" class="form-label">Course Code</label>
+                <input type="text" class="form-control" id="code" placeholder="COURSE CODE">
+              </div>
+
+              <div class="mb-3">
+                <label for="name" class="form-label">Course Name</label>
+                <input type="text" class="form-control" id="name" placeholder="COURSE NAME">
+              </div>
+
+              <div class="mb-3">
+                <label for="credits" class="form-label">Credits</label>
+                <input type="number" class="form-control" id="credits" placeholder="CREDITS">
+              </div>
+
+              <div class="mb-3">
+                <label for="dept" class="form-label">Department</label>
+                <input type="text" class="form-control" id="dept" placeholder="DEPARTMENT">
+              </div>
+
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+        </form>
+
+    </div>
+</div>
+
+<%- include('./partials/footer.ejs') %>
